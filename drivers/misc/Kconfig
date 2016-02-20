@@ -598,6 +598,7 @@ config BLUEDROID_PM
           Say Y here to compile support for bluedroid_pm support into the kernel
           or say M to compile it as module (bluedroid_pm).
 
+
 config CPULOAD_MONITOR
 	bool "Publish cpu load measures in sysfs"
 	depends on CPU_FREQ
@@ -605,6 +606,13 @@ config CPULOAD_MONITOR
 	---help---
 	Publish cpu load measured in sysfs, to be used by user space cpu
 	frequency controllers.
+
+config UID_CPUTIME
+	tristate "Per-UID cpu time statistics"
+	depends on PROFILING
+	help
+	  Per UID based cpu time statistics exported to /proc/uid_cputime
+		
 
 source "drivers/misc/c2port/Kconfig"
 source "drivers/misc/eeprom/Kconfig"
