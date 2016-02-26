@@ -796,7 +796,7 @@ static struct core_edp_entry core_edp_table[] = {
 	.leakage_consts_n   = {	 400000,  650000,  850000, 1050000 },	\
 	.ijk_scaled	    = 10000,					\
 	.leakage_min	    = 30,					\
-	.volt_temp_cap	    = { 70, 1300 },				\
+	.volt_temp_cap	    = { 78, 1350 },				\
 	.leakage_consts_ijk = LEAKAGE_CONSTS_IJK_COMMON
 
 static struct tegra_edp_cpu_leakage_params t11x_leakage_params[] = {
@@ -823,7 +823,7 @@ static struct tegra_edp_cpu_leakage_params t11x_leakage_params[] = {
 	},
 	{
 		.cpu_speedo_id	    = 1, /* A01P+ CPU */
-		.safety_cap = { 1810500, 1810500, 1606500, 1606500 },
+		.safety_cap = { 2958000, 2958000, 2958000, 2958000 },
 		.max_current_cap = { /* values are from tegra4 datasheet */
 			{ .max_cur = 7500, .max_temp = 90,
 				{ 1800000, 1700000, 1320000, 1320000 }
@@ -854,7 +854,7 @@ static struct tegra_edp_cpu_leakage_params t11x_leakage_params[] = {
 	},
 	{
 		.cpu_speedo_id	    = 2, /* A01P+ fast CPU */
-		.safety_cap = { 1912500, 1912500, 1912500, 1912500 },
+		.safety_cap = { 2958000, 2958000, 2958000, 2958000 },
 		.max_current_cap = { /* values are from tegra4 datasheet */
 			{ .max_cur = 9000, .max_temp = 90,
 				{ 1900000, 1900000, 1500000, 1500000 }
@@ -876,7 +876,7 @@ static struct tegra_edp_cpu_leakage_params t11x_leakage_params[] = {
 	},
 	{
 		.cpu_speedo_id	    = 3,
-		.safety_cap = { 1810500, 1810500, 1810500, 1810500 },
+		.safety_cap = { 2958000, 2958000, 2958000, 2958000 },
 		.max_current_cap = { /* fixed values */
 			{ .max_cur = 9000, .max_temp = 105,
 				{ 1810500, 1810500, 1530000, 1530000 }
